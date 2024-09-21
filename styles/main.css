@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-600: #4b5563;
+  --gray-200: #e5e7eb;
+  --gray-50: #f9fafb;
+  --green-700: #15803d;
+  --green-600: #16a34a;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--gray-50);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  padding: 2rem 0;
+}
+
+.header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--gray-600);
+  color: var(--white);
+}
+
+.badge p {
+  font-size: 1rem;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+
+  background-color: transparent;
+  border: 1px solid var(--gray-800);
+  color: var(--gray-800);
+}
+
+.tab.active {
+  background-color: var(--gray-800);
+  color: var(--white);
+}
+
+/* Products */
+.product-list {
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.product-list.active {
+  display: grid;
+}
+
+.product-image {
+  height: 200px;
+  background-color: var(--gray-200);
+
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-info {
+  padding: 1rem;
+  background-color: var(--white);
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.product-info h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.25rem;
+}
+
+.product-info p {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+}
+
+.order-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+
+  background-color: var(--green-600);
+  color: var(--white);
+  margin-top: 1rem;
+
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.order-btn:hover {
+  background-color: var(--green-700);
+}

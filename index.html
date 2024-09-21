@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Faça seu pedido online com facilidade." />
+    <meta name="keywords" content="Cardápio, Pedidos, Pratos, Alimentos." />
+    <meta name="author" content="Clodoaldo Dantas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <title>Cardápio Digital</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Cardápio</h1>
+
+        <div class="badge" id="time">
+          <span class="material-symbols-outlined">schedule</span>
+          <p>Aberto de 08 às 18h</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="tabs container">
+      <button class="tab active" data-content="comidas">
+        <span class="material-symbols-outlined">lunch_dining</span>
+        Comidas
+      </button>
+
+      <button class="tab" data-content="bebidas">
+        <span class="material-symbols-outlined">local_drink</span>
+        Bebidas
+      </button>
+    </nav>
+
+    <main class="container">
+      <section class="product-list active" id="comidas">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/burger.svg" alt="Hambúrguer" />
+          </div>
+
+          <div class="product-info">
+            <h2>Clássico Hambúrguer Suculento</h2>
+            <p>
+              Sabor irresistível em cada mordida! Pão macio, carne suculenta e
+              ingredientes frescos para uma experiência única.
+            </p>
+
+            <button class="order-btn">
+              <span class="material-symbols-outlined">shopping_cart</span>
+              Faça seu pedido
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/french-fries.svg" alt="Batata Frita" />
+          </div>
+
+          <div class="product-info">
+            <h2>Batata Frita Crocante</h2>
+            <p>
+              Deliciosas batatas fritas, crocantes por fora e macias por dentro.
+              O acompanhamento perfeito para qualquer refeição!
+            </p>
+
+            <button class="order-btn">
+              <span class="material-symbols-outlined">shopping_cart</span>
+              Faça seu pedido
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/chicken.svg" alt="Frango Frito" />
+          </div>
+
+          <div class="product-info">
+            <h2>Frango Frito Douradinho</h2>
+            <p>
+              Peito de frango empanado e frito até a perfeição. Crocante por
+              fora, suculento por dentro. Uma verdadeira delícia!
+            </p>
+
+            <button class="order-btn">
+              <span class="material-symbols-outlined">shopping_cart</span>
+              Faça seu pedido
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-list" id="bebidas">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/soda.svg" alt="Refrigerante" />
+          </div>
+
+          <div class="product-info">
+            <h2>Refrigerante Gelado</h2>
+            <p>Bebida refrescante para acompanhar seu lanche ou refeição.</p>
+
+            <button class="order-btn">
+              <span class="material-symbols-outlined">shopping_cart</span>
+              Faça seu pedido
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/milkshake.svg" alt="Milkshake" />
+          </div>
+
+          <div class="product-info">
+            <h2>Milkshake Cremoso</h2>
+            <p>Delicioso milkshake cremoso com sabores irresistíveis.</p>
+
+            <button class="order-btn">
+              <span class="material-symbols-outlined">shopping_cart</span>
+              Faça seu pedido
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/order.js"></script>
+    <script src="./scripts/time.js"></script>
+    <script src="./scripts/tabs.js"></script>
+  </body>
+</html>
